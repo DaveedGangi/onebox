@@ -1,3 +1,81 @@
+
+Here’s a description of the code and the main points of your `index.js` and `index.css` files:
+
+### **index.js**
+- **Imports**: The code imports various components and icons from React and the `react-icons` library to use in the UI.
+- **Component Definition (`Home`)**:
+  - **State**: 
+    - `mode`: A boolean that toggles between dark mode and light mode.
+    - `mails`: An array that will hold email data fetched from an API.
+  - **Lifecycle Method (`componentDidMount`)**: 
+    - `getAllMails`: This function fetches email data from the API endpoint and updates the state with the fetched data. If the request fails, it logs an error.
+  - **Mode Toggle (`changeMode`)**: 
+    - Toggles the `mode` state between dark and light modes when a button is clicked.
+  - **Render Method**: 
+    - **Navbar**: Displays the app name ("Onebox") and a button to toggle between dark and light modes. The button’s image changes depending on the current mode.
+    - **Main Container (`home-container`)**: 
+      - **Left Side**: Displays a vertical menu with various icons for navigation.
+      - **Right Side**: Shows a placeholder image and a message indicating that inbound emails will appear here.
+
+### **index.css**
+- **Styling**:
+  - **Navbar**: Flexbox layout for alignment, with padding and a bottom border.
+  - **Mode Classes (`dark-mode`, `light-mode`)**: Define background and text colors for dark and light modes.
+  - **Buttons**: Styled with background colors and no borders, making them blend with the current mode.
+  - **Left Side (`left-side`)**: A vertical navigation bar aligned to the left, with icons stacked vertically.
+  - **Main Container (`home-container`)**: A flex container to hold the left-side navigation and the right-side content.
+  - **Right Side (`right-side`)**: Centers the content (image and text) in the container.
+  - **Responsive Design**: Includes media queries to adjust the size of the image on smaller screens.
+
+### **Main Points**:
+1. **Dark/Light Mode Toggle**: The app allows users to switch between dark and light modes.
+2. **API Integration**: Fetches and displays email data from a specified API.
+3. **Responsive Design**: The layout adjusts for different screen sizes, particularly the image size.
+4. **Icon-Based Navigation**: The left-side navigation uses icons to represent different features or sections.
+5. **User-Friendly Interface**: The right-side provides a clean and informative placeholder when no emails are available.
+
+This component is structured to provide a visually appealing and functional user interface, with dynamic theming and responsive design.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
